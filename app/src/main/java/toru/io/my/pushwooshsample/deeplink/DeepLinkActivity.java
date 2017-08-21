@@ -22,6 +22,7 @@ public class DeepLinkActivity extends AppCompatActivity {
            Uri data = getIntent().getData();
 
            if(action.equals(Intent.ACTION_VIEW)){
+               Log.w(TAG, "onCreate");
                processForDeepLink(data);
            }
            else{
@@ -41,6 +42,7 @@ public class DeepLinkActivity extends AppCompatActivity {
     @Override
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
+        Log.w(TAG, "onNewIntent");
         String action = intent.getAction();
         Uri data = intent.getData();
         processForDeepLink(data);
