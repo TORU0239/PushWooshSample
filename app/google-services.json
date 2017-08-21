@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "568767066403",
+    "firebase_url": "https://pushwooshtest-177501.firebaseio.com",
+    "project_id": "pushwooshtest-177501",
+    "storage_bucket": "pushwooshtest-177501.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:568767066403:android:3b399e2d5a7f38d2",
+        "android_client_info": {
+          "package_name": "toru.io.my.pushwooshsample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "568767066403-c1hcdama8ni2qktg355ql5t5m1kin80i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "toru.io.my.pushwooshsample",
+            "certificate_hash": "3b60262d1b1b28ec388e9257dd710153ede829c2"
+          }
+        },
+        {
+          "client_id": "568767066403-q5lcgsfcrv3574ik7p6ql6liu1dom54h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9WLF3E3ZtX96w0iwR0L-TsRHRU6DyZPA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "568767066403-q5lcgsfcrv3574ik7p6ql6liu1dom54h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
