@@ -9,28 +9,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <meta-data
             android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version"/>
-
-        <meta-data android:name="com.pushwoosh.appid"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.pushwoosh.appid"
             android:value="@string/push_woosh_app_code" />
-        <meta-data android:name="com.pushwoosh.senderid"
+        <meta-data
+            android:name="com.pushwoosh.senderid"
             android:value="@string/push_woosh_sender_id" />
-        <meta-data android:name="com.pushwoosh.notification_icon"
+        <meta-data
+            android:name="com.pushwoosh.notification_icon"
             android:value="@android:drawable/ic_menu_zoom" />
-        <meta-data android:name="com.pushwoosh.notification_icon_color"
+        <meta-data
+            android:name="com.pushwoosh.notification_icon_color"
             android:value="@color/colorPrimary" />
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".deeplink.DeepLinkActivity"></activity>
     </application>
+
 </manifest>
