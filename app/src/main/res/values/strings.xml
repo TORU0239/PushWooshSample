@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">PushWooshSample</string>
     <string name="api_key">AIzaSyACgJM1T1LMZM1q8M0yG5F-YQPN4OQ5efY</string>
+
+    <!-- PushWoosh App Code -->
+    <string name="push_woosh_app_code">EC305-CB330</string>
+    <string name="push_woosh_sender_id">568767066403</string> <!-- key from google -->
 </resources>
