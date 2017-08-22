@@ -44,7 +44,13 @@ public class DeepLinkActivity extends AppCompatActivity {
         super.onNewIntent(intent);
         Log.w(TAG, "onNewIntent");
         String action = intent.getAction();
-        Uri data = intent.getData();
-        processForDeepLink(data);
+        if(action != null){
+            switch (action){
+                case Intent.ACTION_VIEW:
+                    Uri data = intent.getData();
+                    processForDeepLink(data);
+                    break;
+            }
+        }
     }
 }
