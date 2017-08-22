@@ -18,6 +18,7 @@ public class UserInfoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_user_info);
+        setTitle("PushWooshUserData");
         binding.setUserViewModel(new UserInfoViewModel());
     }
 }

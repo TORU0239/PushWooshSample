@@ -11,7 +11,7 @@ import toru.io.my.pushwooshsample.BR;
 
 public class UserInfo extends BaseObservable{
     private String userName;
-    private String userGender;
+    private boolean isGenderMale;
     private String userAge;
 
     public UserInfo() {}
@@ -27,13 +27,13 @@ public class UserInfo extends BaseObservable{
     }
 
     @Bindable
-    public String getUserGender() {
-        return userGender;
+    public boolean isGenderMale() {
+        return isGenderMale;
     }
 
-    public void setUserGender(String userGender) {
-        this.userGender = userGender;
-        notifyPropertyChanged(BR.userGender);
+    public void setGenderMale(boolean genderMale) {
+        isGenderMale = genderMale;
+        notifyPropertyChanged(BR.genderMale);
     }
 
     @Bindable
