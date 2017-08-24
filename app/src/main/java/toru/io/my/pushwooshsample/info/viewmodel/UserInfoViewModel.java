@@ -9,15 +9,13 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.pushwoosh.Pushwoosh;
-import com.pushwoosh.PushwooshService;
 import com.pushwoosh.exception.PushwooshException;
 import com.pushwoosh.function.Callback;
 import com.pushwoosh.function.Result;
-import com.pushwoosh.internal.network.PushRequest;
-import com.pushwoosh.tags.Tags;
 import com.pushwoosh.tags.TagsBundle;
 
 import toru.io.my.pushwooshsample.R;
+import toru.io.my.pushwooshsample.info.activity.UserInfoActivity;
 import toru.io.my.pushwooshsample.info.model.UserInfo;
 
 /**
@@ -69,13 +67,16 @@ public class UserInfoViewModel {
 
             TagsBundle bundle = new TagsBundle.Builder()
                                 .putBoolean("isMale", info.isGenderMale())
-                                .putString("name", info.getUserName())
-                                .putString("age", info.getUserAge())
+                                .putString("Name", info.getUserName())
+                                .putString("Age", info.getUserAge())
                                 .build();
+
+            ((UserInfoActivity)ctx).showDialog("Sending information");
 
             Pushwoosh.getInstance().sendTags(bundle, new Callback<Void, PushwooshException>() {
                 @Override
                 public void process(@NonNull Result<Void, PushwooshException> result) {
+                    ((UserInfoActivity)ctx).dismissDialog();
                     if(result.isSuccess()){
                         Log.w(TAG, "tag result success!");
                     }
